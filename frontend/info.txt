@@ -1,0 +1,28 @@
+.env files
+
+.env files (environment or env is a file that holds variables and some sensitive data about your app)
+Why we need env files in our app?
+
+Note: In React, components are loaded into a single HTML file. So it is really important not to bloat the 
+      main Js file. We can put each React component into a separate file, to make our application files 
+      more readable.
+      Further, use React Hooks for reusability. 
+      The main js file should be clean with components mounting provided the situation. 
+
+useEffect()
+
+    1. No dependency passed 
+    useEffect(()=>{ 
+        //Runs on every render 
+    })
+
+    2. An empty array
+    useEffect(()=>{
+        //Runs only on the first render
+    })
+
+    3. Props
+    useEffect(()=>{
+        //Runs on the first render
+        //Runs at any time the dependency value changes
+    })
